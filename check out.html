@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./this.css">
+    <title>check out</title>
+</head>
+
+<body>
+    <!-- Headers -->
+    <section class="header">
+        <nav>
+            <a href=""><img src="./assets/logo2.png" alt="logo1.png" id="logo"></a>
+            <div class="nav-links" id="nav-links">
+                <ul>
+                  <li><a href="home.php">Home</a></li>
+                  <li><a href="home.php #Menu">Menu</a></li>
+                  <li><a href="#">Contact Us</a></li>
+                  <li><a href="#">About Us</a></li>
+                  <li><a href="login/login.php">Log out</a></li>
+                </ul>
+              </div>
+        </nav>
+
+        <form action="./login/functions.php" method="post" class="payment-form">
+            <div class="Input-form">
+                <div class="table-address">
+                    <h1>1: Shipping Address</h1>
+
+                    <div class="address">
+                        <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder=" Enter name" required>
+                    </div>
+                    <div class="address">
+                        <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                        <input type="email" id="email" name="email" placeholder=" Enter email" required>
+                    </div>
+                    <div class="address">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" id="adr" name="address" placeholder=" Enter address" required>
+                    </div>
+                    <div class="address">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" id="city" name="city" placeholder=" Enter city" required>
+                    </div>
+                    <div class="address-flex">
+                        <div class="address-col">
+                            <label for="state">State</label>
+                            <input type="text" id="state" name="state" placeholder=" Enter state" required>
+
+                        </div>
+                        <div class="address-col">
+                            <label for="zip">Zip</label>
+                            <input type="text" id="zip" name="zip" placeholder=" Enter zip" required>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="table-payment">
+                    <h1>2: Payment</h1>
+                    <div class="address">
+                        <label for="name">Name On Card</label>
+                        <input type="text" id="name" name="name" placeholder=" Enter name" required>
+                    </div>
+                    <div class="address">
+                        <label for="name">Card Number</label>
+                        <input type="text" id="name" name="cardnumber" placeholder=" Enter card no." required>
+                    </div>
+                    <div class="address">
+                        <label for="name">Expired Month</label>
+                        <input type="text" id="name" name="expmonth" placeholder=" Enter exp. month" required>
+                    </div>
+                    <div class="address-flex">
+                        <div class="address-col">
+                            <label for="name">Expired Year</label>
+                            <input type="text" id="name" name="expyear" placeholder=" Enter exp. year" required>
+                        </div>
+                        <div class="address-col">
+                            <label for="name">CCV</label>
+                            <input type="text" id="name" name="ccv" placeholder=" Enter CCV no." required>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="./assets/payment.jpg" alt="payment">
+                    </div>
+                </div>
+
+            </div>
+            <div class="pay-button">
+
+                <a  class="pay-btn"><input type="submit" value="Order Now" name="paybtn"></a>
+            </form>
+            </div>
+        </form>
+
+
+</html>
